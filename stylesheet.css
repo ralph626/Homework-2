@@ -1,0 +1,85 @@
+/*the css style in the html*/
+
+/*the moving background image */
+    html, body {
+      width: 100%;
+      height: 150vh;
+      overflow-y:visible;
+    }
+    
+    body {
+      background: #131518;
+    }
+    
+    #patt1 path {
+      stroke: #ff509e;
+    }
+    
+    #patt2 path {
+      stroke: #95d13c;
+    }
+    
+    #patt3 path {
+      stroke: #00b6cb;
+    }
+    
+    #patt4 path {
+      stroke: #9753e1;
+    }
+    
+    #mask1 rect {
+      -webkit-animation: pulse 1.90476s infinite;
+              animation: pulse 1.90476s infinite;
+      -webkit-animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+              animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    }
+    
+    #mask2 rect {
+      x: 10;
+      -webkit-animation: pulse 1.90476s infinite 0.47619s;
+              animation: pulse 1.90476s infinite 0.47619s;
+      -webkit-animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+              animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    }
+    
+    #squiggle1, #squiggle2, #squiggle3, #squiggle4 {
+      background-blend-mode: multiply;
+    }
+    
+    @-webkit-keyframes pulse {
+      0% {
+        x: 10;
+      }
+      50% {
+        x: -20;
+      }
+      100% {
+        x: -50;
+      }
+    }
+    
+    @keyframes pulse {
+      0% {
+        x: 10;
+      }
+      50% {
+        x: -20;
+      }
+      100% {
+        x: -50;
+      }
+    }
+ul li a {
+color: beige !important;
+}
+
+.container{
+  height:auto;
+  overflow:visible;
+
+}
+
+/*the style for the footer to center the text*/
+footer{
+  text-align: center;
+}
